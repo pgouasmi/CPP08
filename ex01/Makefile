@@ -19,15 +19,16 @@ _RED = \033[31m
 _END = \033[0m
 _BOLD = \033[1m
 
-NAME = Easy_find
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+NAME = Span
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -ggdb3
 RM = @rm -rf
 CC = @c++
 DIR = @mkdir -p
 PRINT = @echo
-HEADERS =	easyfind.hpp
+HEADERS =	Span.hpp
 
-FILES =		main
+FILES =		main \
+			Span
 
 
 OBJS = $(addsuffix .o, $(addprefix Objects/, $(FILES)))
